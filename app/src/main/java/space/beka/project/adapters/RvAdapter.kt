@@ -40,10 +40,10 @@ MyData.myLiveData.observe(lifecycleOwner){
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         if (position==0){
-            (holder as Vh1)
+            (holder as Vh1).onBind()
         }else{
 
-            (holder as Vh1)
+            (holder as Vh2).onBind()
         }
     }
 
